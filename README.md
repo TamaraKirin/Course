@@ -1,5 +1,5 @@
 ## Description
 ovo su moje bilješke sa tečaja
 
-## script description
+## Scripts description
 prve bilješke će biti o vizualizaciji
