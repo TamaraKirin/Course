@@ -1,4 +1,5 @@
 # ovo je skripta za vizualizaciju podataka
+
 10+10
 #ovo je objekt (može se pisati i = ali ustvari tamara nije = 20 nego samo predstavlja 20)  
 tamara <- 10+10
@@ -18,3 +19,8 @@ plot (iron, diameter, pch=19, cex=2)
 plot (iron, diameter, pch=19, cex=2, col="red")
 
 ?plot() #sve o funkciji plot ili na rdocumentation.org
+
+
+library (devtools) # packages in R are libraries 
+#install the imageRy package from github
+devtools::install_github (
