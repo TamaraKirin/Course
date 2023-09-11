@@ -23,4 +23,11 @@ plot (iron, diameter, pch=19, cex=2, col="red")
 
 library (devtools) # packages in R are libraries 
 #install the imageRy package from github
-devtools::install_github (
+devtools::install_github ("ducciorocchini/imageRy")
+
+devtools::install_github ("ducciorocchini/imageRy")
+Error in loadNamespace(j <- i[[1L]], c(lib.loc, .libPaths()), versionCheck = vI[[j]]) : 
+  there is no package called ‘cachem’
+
+
+
