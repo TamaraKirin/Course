@@ -29,5 +29,37 @@ devtools::install_github ("ducciorocchini/imageRy")
 Error in loadNamespace(j <- i[[1L]], c(lib.loc, .libPaths()), versionCheck = vI[[j]]) : 
   there is no package called ‘cachem’
 
+#drugi dan - treba otvoriti 
+library (imageRy)
+library(terra)
+im.list
 
+#multipanel - to je nekoliko slojeva od jednom 
+par(mfrow=c(1,2))
 
+cl <- colorRampPalette(c("dark blue", "blue", "light blue")) (100) # 100 is the amount of colours in the gradient
+plot(b2, col=cl)
+clg <- colorRampPalette(c("dark green", "green", "light green")) (100) # 100 is the amount of colours in the gradient
+plot(b3, col=cl)
+clr <- colorRampPalette(c("dark red", "red", "light red")) (100) # 100 is the amount of colours in the gradient
+plot(b4, col=cl)
+cln <- colorRampPalette(c("brown", "orange", "yellow")) (100) # 100 is the amount of colours in the gradient
+plot(b8, col=cl)
+
+par(mfrow=c(2,2))
+
+sentdo <- c(b2, b3, b4, b8)
+clall <- colorRampPalette(c("black", 
+plot(sentdo, col=clall)
+
+#how to plot only one
+plot(sentdo$sentine~ites.b8)
+
+                            plot(sentdo[[4]])
+            
+
+     
+#dev.off() clening graffs
+dev.off
+                            
+                            
