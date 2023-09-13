@@ -61,5 +61,19 @@ plot(sentdo$sentine~ites.b8)
      
 #dev.off() clening graffs
 dev.off
-                            
+
+                            # RGB space
+                            im.plotRGB.user(sentdo, 3, 2, 1)#it plots the first three layers in the RGB components
+#isto:
+                            im.plotRGB.user(sentdo, r=3, g=2, b=1)#it plots the first three layers in the RGB components
+ #use of NIR
+ im.plotRGB.user(sentdo, 4,3,2) #tu smo crvenu stavili na nir i zbog toga vidimo stijene bijele a vegetaciju zelenu
+
+#ZADATAK: napravi multiframe sliku sa prirodnim bojama i sliku sa krivim bojama
+
+par(mfrow=c(1,2))
+# on uvijek koristi NIR i crvena za vegetaciju
+#koji sloj daje najviše informacija
+pairs(sentdo)
+
                             
